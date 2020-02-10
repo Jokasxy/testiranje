@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllTestsSuite">
+    <test name="ChromeTests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="tests.MarketSummary"/>
+            <class name="tests.Search"/>
+            <class name="tests.LoginFail"/>
+            <class name="tests.StockGainers"/>
+            <class name="tests.GettingStarted"/>
+        </classes>
+    </test>
+    <test name="EdgeTests">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="tests.MarketSummary"/>
+            <class name="tests.Search"/>
+            <class name="tests.LoginFail"/>
+            <class name="tests.StockGainers"/>
+            <class name="tests.GettingStarted"/>
+        </classes>
+    </test>
+</suite>
